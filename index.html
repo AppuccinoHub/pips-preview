@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbeed6" />
+  <meta name="color-scheme" content="light" />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Read Pip's postcards, help Pip find the way, and raise a baby penguin." />
+  <title>PREVIEW · Pip's Postcards</title><meta name="robots" content="noindex">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Pip's Postcards" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pip's Postcards" />
+  <meta property="og:description" content="Read Pip's postcards, help Pip find the way, and raise a baby penguin." />
+  <meta property="og:image" content="https://appuccinohub.github.io/pips-postcards/og-card.jpg" />
+  <link rel="preload" href="fonts/andika-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=2.3" />
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <button type="button" class="icon-btn" id="btnHome" aria-label="Home" hidden><span aria-hidden="true">🏠</span></button>
+      <div class="top-mid">
+        <p class="top-title" id="topTitle">Pip's Postcards</p>
+        <div class="dots" id="dots" aria-hidden="true" hidden></div>
+      </div>
+      <span class="fish-count" id="fishCount" hidden>🐟 0</span>
+      <button type="button" class="icon-btn" id="btnMute" aria-label="Sound on or off" aria-pressed="false"><span aria-hidden="true" id="muteIcon">🔊</span></button>
+    </header>
+
+    <main class="screens">
+      <section class="screen" id="screenName" hidden><div class="center-box" id="nameBox"></div></section>
+
+      <section class="screen" id="screenHome" hidden>
+        <div class="home" id="homeBox"></div>
+        <button type="button" class="grown" id="btnGrown" aria-label="Grown-ups area. Press and hold for 3 seconds.">👤 Grown-ups <span class="hold-ring"></span></button>
+      </section>
+
+      <section class="screen" id="screenPlay" hidden>
+        <div class="feed" id="feed" tabindex="-1" aria-label="Cards. Swipe up for the next card."></div>
+        <div class="side-nav">
+          <button type="button" class="nav-btn" id="btnPrev" aria-label="Previous card"><span aria-hidden="true">↑</span></button>
+          <button type="button" class="nav-btn" id="btnNext" aria-label="Next card"><span aria-hidden="true">↓</span></button>
+        </div>
+        <p class="swipe-hint" id="swipeHint" aria-hidden="true" hidden>swipe up ↑</p>
+      </section>
+
+      <section class="screen" id="screenEnd" hidden><div class="center-box" id="endBox"></div></section>
+
+      <section class="screen scroll" id="screenParent" hidden><div class="parent" id="parentBox"></div></section>
+    </main>
+
+    <div class="gate" id="gate" hidden role="dialog" aria-modal="true" aria-labelledby="gateQ">
+      <form class="gate-box" id="gateForm">
+        <p class="gate-h">Grown-ups only</p>
+        <p class="gate-q" id="gateQ">7 × 8 = ?</p>
+        <input id="gateIn" inputmode="numeric" autocomplete="off" aria-label="Answer" />
+        <div class="gate-row"><button type="button" class="pa-btn ghost" id="gateCancel">Cancel</button><button type="submit" class="pa-btn">Open</button></div>
+      </form>
+    </div>
+    <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
+  </div>
+  <script src="guide.js?v=2.3"></script>
+  <script src="audio/index.js?v=2.3"></script>
+  <script src="weeks/index.js?v=2.3"></script>
+  <script src="weeks/u1w2.js?v=2.3"></script>
+  <script src="app.js?v=2.3"></script>
+</body>
+</html>
