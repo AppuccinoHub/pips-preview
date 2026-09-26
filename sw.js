@@ -2,9 +2,9 @@
    When you publish changes, bump VERSION and the ?v= numbers in index.html.
    CORE is the offline starter set; every other picture (guide poses, baby stages, the girl, stickers) is cached the
    first time it loads, and the app pre-loads the chosen guide's poses, the baby's stages and the girl art. */
-const VERSION = 'pvw-09260459';
+const VERSION = 'pvw-09260506';
 const CORE = [
-  './', 'index.html', 'styles.css?v=2.3', 'app.js?v=2.3', 'guide.js?v=2.3', 'audio/index.js?v=2.3', 'weeks/index.js?v=2.3', 'weeks/u1w2.js?v=2.3', 'manifest.webmanifest', 'favicon.png',
+  './', 'index.html', 'styles.css?v=2.3', 'app.js?v=2.3p1', 'guide.js?v=2.3p1', 'audio/index.js?v=2.3', 'weeks/index.js?v=2.3', 'weeks/u1w2.js?v=2.3', 'manifest.webmanifest', 'favicon.png',
   'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'fonts/andika-regular.woff2', 'fonts/andika-bold.woff2', 'fonts/fredoka.woff2', 'img/bonus_koala.webp', 'img/fri_barn.webp',
   'img/fri_radio.webp', 'img/item_aurora.webp', 'img/item_hill.webp', 'img/item_igloo.webp', 'img/item_pond.webp', 'img/item_sled.webp', 'img/item_slide.webp', 'img/item_snowman.webp',
   'img/koala.webp', 'img/mon_antarctica.webp', 'img/pip_happy.webp', 'img/thu_rainforest.webp', 'img/tue_batcave.webp', 'img/wed_desert.webp', 'guides/fox/main.webp', 'guides/otter/main.webp',

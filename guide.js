@@ -6,7 +6,7 @@ window.PIP_GUIDES = {
   names: ['Pip', 'Penny', 'Coco', 'Luna', 'Bea', 'Skipper'],   // optional name ideas under the type box
   pronouns: { she: 'she', her: 'her', hers: 'hers' },
   // Pip's speaking voice: the device's best natural female en-US voice. Same for every guide.
-  voice: { prefer: ['Samantha', 'Google US English', 'Ava', 'Allison', 'Aria', 'Jenny', 'Zira', 'Karen', 'Female'], pitch: 1.2, rate: 0.85 },
+  voice: { prefer: ['Samantha', 'Google US English', 'Ava', 'Allison', 'Aria', 'Jenny', 'Zira', 'Karen', 'Female'], pitch: 1.0, rate: 0.95 },
   // Fallback lines that work for any guide.
   generic: {
     mishaps: ['Oops, I read that one upside down! 🙃', 'Silly me, I was looking at a cloud! ☁️', 'Whoops, I sneezed and mixed them up! 🤧', 'Hmm, I think my glasses are foggy! 👓'],

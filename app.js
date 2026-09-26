@@ -222,7 +222,7 @@
         const u = new SpeechSynthesisUtterance(t);
         u.lang = opts.lang === 'it' ? 'it-IT' : 'en-US';
         const V = GUIDES.voice || {};
-        u.rate = opts.rate || (opts.slow ? 0.6 : (V.rate || 0.85)); u.pitch = V.pitch || 1.15; u.volume = vol();
+        u.rate = opts.rate || (opts.slow ? 0.6 : (V.rate || 0.85)); u.pitch = V.pitch || 1.0; u.volume = vol();
         if (voice && opts.lang !== 'it') u.voice = voice;
         u.onend = () => { clearTimeout(guard); fin(); }; u.onerror = () => { clearTimeout(guard); fin(); };
         speechSynthesis.speak(u);
